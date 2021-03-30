@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sec-home {
+    background-image: url('../img/bg-home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo-geobies {
+    align-self: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+.header-list-items {
+    align-self: center;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.header-list-items:last-child:hover {
+    border: none;
+}
+
+.sign-up {
+    font-weight: 700;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background-color: #FF298D;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.header-list-items:hover, .sign-up:hover {
+    transform: translateY(2px);
+}
+
+.header-list-items:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.sign-up:hover {
+    background-color: #CC2070;
+}
