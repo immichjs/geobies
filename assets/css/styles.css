@@ -76,7 +76,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     outline: none;
-    transition: .2s;
+    transition: .3s;
     font-size: 0.9rem;
     box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
 }
@@ -84,6 +84,7 @@ body {
 .standard-button:hover {
     background-color: #fff;
     color: #FF298D;
+    transform: scale(1.05);
 }
 
 .standard-button:focus {
@@ -136,12 +137,4 @@ body {
     width: 15px;
     user-select: none;
     -webkit-user-drag: none;
-}
-
-.how-it-works {
-    transition: .3s;
-}
-
-.how-it-works:hover {
-    transform: scale(1.05);
 }
