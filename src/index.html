@@ -7,25 +7,50 @@
 
     <!-- CDN Tailwind CSS -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="./assets/img/geobies-icon.png">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
     <title>Geobies - Development</title>
 </head>
 <body>
     <section class="sec-home">
-        <div class="sec-home-container pt-16 px-40">
-            <header class="sec-home-container-header flex justify-between">
-                <img src="./assets/img/geobies-logo.png" alt="Logo Geobies" class="logo-geobies">
-                <ul class="header-list flex gap-9 align-center">
-                    <li class="header-list-items pricing"><a href="#">Pricing</a></li>
-                    <li class="header-list-items blog"><a href="#">Blog</a></li>
-                    <li class="header-list-items about"><a href="#">About</a></li>
-                    <li class="header-list-items sign-in"><a href="#">Sign in</a></li>
-                    <li class="header-list-items">
-                        <button class="sign-up">Sign up</button>
-                    </li>
-                </ul>
+        <div class="sec-home-container">
+            <header class="header-container">
+                <img src="./assets/img/geobies-logo.png" alt="Logo Geobies" class="logo-geobies"/>
+
+                <nav>
+                    <ul class="header-list">
+                        <li class="header-list-items pricing">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="header-list-items blog">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="header-list-items about">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="header-list-items sign-in">
+                            <a href="#">Sign in</a>
+                        </li>
+                        <li class="header-list-items">
+                            <button class="sign-up standard-button">Sign up</button>
+                        </li>
+                    </ul>
+                </nav>
             </header>
+
+            <div class="play">
+                <div class="container-play-button">
+                    <img src="./assets/img/svg/play.svg" alt="Botão de play" class="play-button">
+                </div>
+
+                <h1>Adipisicing elit seddo ipsum</h1>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+
+                <button class="how-it-works standard-button">How it works</button>
+            </div>
         </div>
     </section>
 </body>

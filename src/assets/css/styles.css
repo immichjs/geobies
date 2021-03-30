@@ -17,45 +17,131 @@ body {
     height: 100vh;
 }
 
+.sec-home-container {
+    height: 100vh
+}
+
+/* Header */
+.header-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-geobies {
-    align-self: center;
+    justify-self: center;
     cursor: pointer;
     -webkit-user-drag: none;
+    margin: 15px 0;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
 }
 
 .header-list-items {
-    align-self: center;
-    font-size: 1rem;
     color: #fff;
+    font-size: 0.9rem;
     font-weight: 400;
-    letter-spacing: 2px;
-    padding: 15px 0;
+    letter-spacing: 1px;
+    padding: 15px 20px;
     cursor: pointer;
-    transition: .1s;
-}
-
-.header-list-items:last-child:hover {
-    border: none;
-}
-
-.sign-up {
-    font-weight: 700;
-    padding: 15px 35px;
-    border-radius: 50px;
-    background-color: #FF298D;
-    font-size: 1rem;
-    text-transform: uppercase;
     transition: .2s;
-}
-
-.header-list-items:hover, .sign-up:hover {
-    transform: translateY(2px);
+    align-self: center;
+    border-radius: 1px;
 }
 
 .header-list-items:hover {
-    border-bottom: 2px solid #fff;
+    background: #fff;
+    color: #FF298D;
+    border-radius: 1px;
 }
 
-.sign-up:hover {
-    background-color: #CC2070;
+.header-list-items:last-child {
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.header-list-items:last-child:hover {
+    background: none;
+}
+
+.standard-button {
+    font-weight: 500;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background-color: #FF298D;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    transition: .2s;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.standard-button:hover {
+    background-color: #fff;
+    color: #FF298D;
+}
+
+.standard-button:focus {
+    outline: none;
+}
+
+/* Home */
+.play {
+    color: #fff;
+    position: relative;
+    top: 180px;
+    margin-left: 50px;
+}
+
+.play h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.play p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.play p:last-of-type {
+    margin-bottom: 35px;
+}
+
+.container-play-button {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+.container-play-button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.play-button {
+    width: 15px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.how-it-works {
+    transition: .3s;
+}
+
+.how-it-works:hover {
+    transform: scale(1.05);
 }
