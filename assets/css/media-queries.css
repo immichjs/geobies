@@ -1,23 +1,37 @@
 @media only screen and (min-width: 768px) {
     .play {
+        margin-left: 48px;
         max-width: 31rem;
-        margin-left: 200px;
     }
 }
 
 @media only screen and (min-width: 1100px) {
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 64px 192px 0;
+    .sec-home {
+        padding: 0 192px;
     }
 
     .logo-geobies {
-        align-self: center;
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-container nav {
+        display: flex;
+    }
+
+    .logo-geobies {
         margin: 0;
     }
 
-    .play {
-        margin-left: 280px;
+    .header-list-items {
+        color: #fff;
     }
 }

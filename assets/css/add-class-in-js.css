@@ -1,0 +1,25 @@
+.header-container nav.show {
+    display: inline;
+    position: fixed;
+    width: 100vw;
+    top: 150px;
+    left: 0;
+    z-index: 99;
+    box-sizing: 10px ;
+}
+
+.header-list.list {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    gap: 10px;
+    background: #fff;
+    width: 100%;
+    padding: 20px 64px;
+    animation: fadein .4s ease-in-out;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

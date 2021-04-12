@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/media-queries.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/add-class-in-js.css">
     <title>Geobies - Development</title>
 </head>
 <body>
@@ -18,6 +20,13 @@
         <div class="sec-home-container">
             <header class="header-container">
                 <img src="./assets/img/geobies-logo.png" alt="Logo Geobies" class="logo-geobies"/>
+                <input id="menu-hamburguer" type="checkbox" />
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
 
                 <nav>
                     <ul class="header-list">
@@ -53,5 +62,7 @@
             </div>
         </div>
     </section>
+
+    <script src="assets/javascript/menu.js"></script>
 </body>
 </html>

@@ -15,18 +15,35 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    padding: 0 64px;
 }
 
 .sec-home-container {
-    height: 100vh
+    height: 100vh;
 }
 
 /* Header */
 .header-container {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0 0;
+}
+
+.header-container nav {
+    display: none;
+}
+
+.menu-burger {
+    position: absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
 }
+
 
 .logo-geobies {
     justify-self: center;
@@ -42,7 +59,7 @@ body {
 
 .header-list-items {
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
     padding: 15px 20px;
@@ -50,18 +67,18 @@ body {
     transition: .2s;
     align-self: center;
     border-radius: 1px;
+    color: #FF298D;
+    font-weight: 600;
 }
 
 .header-list-items:hover {
-    background: #fff;
-    color: #FF298D;
-    border-radius: 1px;
+    color: #fff;
+    background: #FF298D;
 }
 
 .header-list-items:last-child {
     border: none;
     padding: 0;
-    margin-left: 10px;
 }
 
 .header-list-items:last-child:hover {
@@ -96,7 +113,6 @@ body {
     color: #fff;
     position: relative;
     top: 180px;
-    margin-left: 50px;
 }
 
 .play h1 {
@@ -112,6 +128,7 @@ body {
     font-weight: 400;
     line-height: 2rem;
     letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 .play p:last-of-type {
